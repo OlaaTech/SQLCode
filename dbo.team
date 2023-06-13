@@ -1,0 +1,42 @@
+USE [mytool]
+GO
+
+/****** Object:  Table [dbo].[team]    Script Date: 13/06/2023 18:36:33 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[team](
+	[v] [tinyint] NOT NULL,
+	[id] [nvarchar](50) NOT NULL,
+	[activeflag] [nvarchar](50) NOT NULL,
+	[authors] [nvarchar](50) NOT NULL,
+	[categories_programmingLanguage] [nvarchar](50) NOT NULL,
+	[counter] [tinyint] NOT NULL,
+	[createdAt] [nvarchar](50) NOT NULL,
+	[datasetfields_geographicCoverage] [nvarchar](50) NOT NULL,
+	[datasetfields_phenotypes] [nvarchar](50) NOT NULL,
+	[datasetfields_physicalSampleAvailability] [nvarchar](50) NOT NULL,
+	[datasetfields_publisher] [nvarchar](50) NOT NULL,
+	[datasetfields_technicaldetails] [nvarchar](50) NOT NULL,
+	[datasetfields_versionLinks] [nvarchar](50) NOT NULL,
+	[datasetids] [nvarchar](50) NOT NULL,
+	[document_links_doi] [nvarchar](50) NOT NULL,
+	[document_links_html] [nvarchar](50) NOT NULL,
+	[document_links_pdf] [nvarchar](50) NOT NULL,
+	[id1] [int] NOT NULL,
+	[members] [nvarchar](500) NOT NULL,
+	[programmingLanguage] [nvarchar](50) NOT NULL,
+	[relatedObjects] [nvarchar](50) NOT NULL,
+	[showOrganisation] [nvarchar](50) NOT NULL,
+	[tags_features] [nvarchar](50) NOT NULL,
+	[tags_topics] [nvarchar](50) NOT NULL,
+	[toolids] [nvarchar](50) NOT NULL,
+	[type] [nvarchar](50) NOT NULL,
+	[updatedAt] [nvarchar](50) NOT NULL
+) ON [PRIMARY]
+GO
+
+
