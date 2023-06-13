@@ -1,0 +1,66 @@
+USE [mytool]
+GO
+
+/****** Object:  Table [dbo].[Person]    Script Date: 13/06/2023 18:34:12 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[Person](
+	[v] [bit] NULL,
+	[id] [nvarchar](50) NOT NULL,
+	[activeflag] [nvarchar](50) NULL,
+	[authors] [nvarchar](50) NOT NULL,
+	[bio] [nvarchar](500) NULL,
+	[company] [nvarchar](100) NULL,
+	[counter] [tinyint] NULL,
+	[createdAt] [nvarchar](50) NULL,
+	[datasetfields_geographicCoverage] [nvarchar](50) NULL,
+	[datasetfields_phenotypes] [nvarchar](50) NULL,
+	[datasetfields_physicalSampleAvailability] [nvarchar](50) NULL,
+	[datasetfields_technicaldetails] [nvarchar](50) NULL,
+	[datasetfields_versionLinks] [nvarchar](50) NULL,
+	[datasetids] [nvarchar](50) NULL,
+	[displayDomain] [nvarchar](50) NULL,
+	[displayLink] [nvarchar](50) NULL,
+	[displayOrcid] [nvarchar](50) NULL,
+	[displayOrganisation] [nvarchar](50) NULL,
+	[displaySector] [nvarchar](50) NULL,
+	[emailNotifications] [nvarchar](50) NOT NULL,
+	[feedback] [bit] NULL,
+	[firstname] [nvarchar](50) NULL,
+	[id1] [bigint] NOT NULL,
+	[lastname] [nvarchar](50) NULL,
+	[link] [nvarchar](50) NULL,
+	[linkedids] [nvarchar](50) NULL,
+	[members] [nvarchar](50) NULL,
+	[news] [nvarchar](50) NULL,
+	[orcid] [nvarchar](50) NULL,
+	[organisation] [nvarchar](50) NULL,
+	[profileComplete] [bit] NOT NULL,
+	[programmingLanguage] [nvarchar](50) NULL,
+	[projectids] [nvarchar](50) NULL,
+	[relatedObjects] [nvarchar](50) NULL,
+	[sector] [nvarchar](50) NULL,
+	[showBio] [bit] NULL,
+	[showDomain] [nvarchar](50) NULL,
+	[showLink] [nvarchar](50) NULL,
+	[showOrcid] [bit] NULL,
+	[showOrganisation] [bit] NULL,
+	[showSector] [bit] NULL,
+	[sociallinks] [nvarchar](50) NULL,
+	[tags] [nvarchar](50) NULL,
+	[tags_features] [nvarchar](50) NULL,
+	[tags_topics] [nvarchar](50) NULL,
+	[terms] [bit] NOT NULL,
+	[toolids] [nvarchar](50) NULL,
+	[type] [nvarchar](50) NOT NULL,
+	[updatedAt] [nvarchar](50) NOT NULL,
+	[updatedon] [nvarchar](50) NULL,
+	[usedids] [nvarchar](50) NULL
+) ON [PRIMARY]
+GO
+
+
