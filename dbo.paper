@@ -1,0 +1,63 @@
+USE [mytool]
+GO
+
+/****** Object:  Table [dbo].[paper]    Script Date: 13/06/2023 18:31:00 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[paper](
+	[v] [bit] NOT NULL,
+	[id] [nvarchar](50) NOT NULL,
+	[activeflag] [nvarchar](50) NOT NULL,
+	[authors] [nvarchar](200) NOT NULL,
+	[authorsNew] [nvarchar](500) NULL,
+	[bio] [nvarchar](50) NULL,
+	[categories_category] [nvarchar](50) NULL,
+	[categories_programmingLanguage] [nvarchar](50) NOT NULL,
+	[categories_programmingLanguageVersion] [time](7) NULL,
+	[counter] [tinyint] NULL,
+	[createdAt] [nvarchar](50) NOT NULL,
+	[datasetfields_geographicCoverage] [nvarchar](50) NULL,
+	[datasetfields_phenotypes] [nvarchar](50) NULL,
+	[datasetfields_physicalSampleAvailability] [nvarchar](50) NULL,
+	[datasetfields_technicaldetails] [nvarchar](50) NULL,
+	[datasetfields_versionLinks] [nvarchar](50) NULL,
+	[datasetids] [nvarchar](50) NOT NULL,
+	[description] [nvarchar](2300) NOT NULL,
+	[discourseTopicId] [smallint] NULL,
+	[document_links] [nvarchar](100) NULL,
+	[document_links_doi] [nvarchar](150) NULL,
+	[document_links_html] [nvarchar](150) NULL,
+	[document_links_pdf] [nvarchar](150) NULL,
+	[emailNotifications] [bit] NULL,
+	[firstname] [nvarchar](50) NULL,
+	[id1] [bigint] NOT NULL,
+	[isPreprint] [bit] NULL,
+	[journal] [nvarchar](50) NULL,
+	[journalYear] [int] NULL,
+	[lastname] [nvarchar](50) NULL,
+	[leadResearcher] [nvarchar](50) NULL,
+	[license] [nvarchar](50) NULL,
+	[link] [nvarchar](200) NULL,
+	[members] [nvarchar](50) NULL,
+	[name] [nvarchar](350) NOT NULL,
+	[orcid] [nvarchar](50) NULL,
+	[programmingLanguage] [nvarchar](50) NULL,
+	[relatedObjects] [nvarchar](1050) NULL,
+	[resultsInsights] [nvarchar](750) NULL,
+	[showOrganisation] [nvarchar](50) NULL,
+	[tags_features] [nvarchar](50) NOT NULL,
+	[tags_topics] [nvarchar](350) NOT NULL,
+	[terms] [nvarchar](50) NULL,
+	[toolids] [nvarchar](50) NOT NULL,
+	[type] [nvarchar](50) NOT NULL,
+	[updatedAt] [nvarchar](50) NOT NULL,
+	[updatedon] [nvarchar](50) NULL,
+	[uploader] [bigint] NULL
+) ON [PRIMARY]
+GO
+
+
